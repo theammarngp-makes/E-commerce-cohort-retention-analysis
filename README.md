@@ -37,6 +37,7 @@ The goal is to understand how customers return over time after their first purch
 2. Most customers are one-time buyers with very low repeat rate  
 3. A small percentage of customers return after long gaps  
 4. Retention pattern is consistent across different cohorts  
+(Retention drops below 1% after the first month, highlighting a major customer retention problem)
 
 ## 💡 Business Impact
 This analysis helps businesses:
