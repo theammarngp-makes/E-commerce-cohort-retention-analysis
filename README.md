@@ -28,8 +28,9 @@ The goal is to understand how customers return over time after their first purch
 
 ## 📈 Dashboard Preview
 <img width="2398" height="1198" alt="Dashboard 1-2" src="https://github.com/user-attachments/assets/f6bd370f-516d-4c06-99f1-4d4a464fc85d" /> 
+
 ## 📊 Live Dashboard
-[View Interactive Dashboard](https://public.tableau.com/views/E-commercecohortretention/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+🔗 [View Interactive Tableau Dashboard](https://public.tableau.com/views/E-commercecohortretention/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ## Key Insights
 1. Customer retention drops sharply after the first month  
