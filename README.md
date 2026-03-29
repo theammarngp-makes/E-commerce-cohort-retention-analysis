@@ -14,6 +14,16 @@ The goal is to understand how customers return over time after their first purch
 - SQL (MySQL)
 - Tableau Public
 - Excel / CSV Dataset
+  
+  ## 📁 Repository Structure
+
+| Folder / File | Content |
+|---------------|---------|
+| 📁 dashboard | cohort retention.png |
+| 📁 data | Cohort Retention %.csv |
+| 📁 insights | insights.md |
+| 📁 sql | cohort_analysis.sql |
+| 📄 README.md | Project documentation |
 
 ## 📌 Project Highlights
 - Performed cohort analysis using SQL  
