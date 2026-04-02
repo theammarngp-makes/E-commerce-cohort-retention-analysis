@@ -79,6 +79,11 @@ Aspiring Data Analyst | SQL | Tableau
 
 ## 📬 Contact
 - LinkedIn: https://www.linkedin.com/in/mohammad-ammar-ngp/  
-- GitHub: https://github.com/theammarngp-makes  
+- GitHub: https://github.com/theammarngp-makes
+- 
+## 🔗 Related Projects
 
+- E-commerce Sales Analysis https://github.com/theammarngp-makes/olist-sales-analysis
+- E-Commerce RFM Customer Segmentation: : https://github.com/theammarngp-makes/e-commerce-rfm-customer-segmentation
+  
 ⭐ If you found this project useful, give it a star!
