@@ -84,6 +84,6 @@ Aspiring Data Analyst | SQL | Tableau
 ## 🔗 Related Projects
 
 - E-commerce Sales Analysis https://github.com/theammarngp-makes/olist-sales-analysis
-- E-Commerce RFM Customer Segmentation: : https://github.com/theammarngp-makes/e-commerce-rfm-customer-segmentation
+- E-Commerce RFM Customer Segmentation: : https://github.com/theammarngp-makes/ecommerce-rfm-customer-segmentation
   
 ⭐ If you found this project useful, give it a star!
