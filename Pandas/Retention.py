@@ -3,12 +3,12 @@ import matplotlib.pyplot as plt
 import datetime as dt
 import seaborn as sns
 
-customers = pd.read_csv("/Users/mohammadammar/Desktop/Ecommerce Sales/olist_customers_dataset.csv")
-geolocation=pd.read_csv("/Users/mohammadammar/Desktop/Ecommerce Sales/olist_geolocation_dataset.csv")
-order_items=pd.read_csv("/Users/mohammadammar/Desktop/Ecommerce Sales/olist_order_items_dataset.csv")
-order_payments=pd.read_csv("/Users/mohammadammar/Desktop/Ecommerce Sales/olist_order_payments_dataset.csv")
-orders =pd.read_csv("/Users/mohammadammar/Desktop/Ecommerce Sales/olist_orders_dataset.csv")
-products =pd.read_csv("/Users/mohammadammar/Desktop/Ecommerce Sales/olist_products_dataset.csv")
+customers = pd.read_csv("Desktop/Ecommerce Sales/olist_customers_dataset.csv")
+geolocation=pd.read_csv("Desktop/Ecommerce Sales/olist_geolocation_dataset.csv")
+order_items=pd.read_csv("Desktop/Ecommerce Sales/olist_order_items_dataset.csv")
+order_payments=pd.read_csv("Desktop/Ecommerce Sales/olist_order_payments_dataset.csv")
+orders =pd.read_csv("Desktop/Ecommerce Sales/olist_orders_dataset.csv")
+products =pd.read_csv("Desktop/Ecommerce Sales/olist_products_dataset.csv")
 
 
 date_cols = [
