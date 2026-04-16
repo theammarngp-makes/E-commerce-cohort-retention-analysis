@@ -1,8 +1,10 @@
+# Importing Libraries
 import pandas as pd 
 import matplotlib.pyplot as plt
 import datetime as dt
 import seaborn as sns
 
+# Loading CSV files 
 customers = pd.read_csv("Desktop/Ecommerce Sales/olist_customers_dataset.csv")
 geolocation=pd.read_csv("Desktop/Ecommerce Sales/olist_geolocation_dataset.csv")
 order_items=pd.read_csv("Desktop/Ecommerce Sales/olist_order_items_dataset.csv")
@@ -10,12 +12,13 @@ order_payments=pd.read_csv("Desktop/Ecommerce Sales/olist_order_payments_dataset
 orders =pd.read_csv("Desktop/Ecommerce Sales/olist_orders_dataset.csv")
 products =pd.read_csv("Desktop/Ecommerce Sales/olist_products_dataset.csv")
 
-
+# CReating date refrence 
 date_cols = [
     "order_purchase_timestamp",
     "order_delivered_customer_date",
     "order_estimated_delivery_date"
 ]
+# Merging tables 
 df = orders.merge(customers,on="customer_id",how="left")\
       .merge(order_items,on="order_id",how="left")\
       .merge(products,on="product_id",how="left")\
@@ -42,6 +45,8 @@ cohort_pivot = cohort_data.pivot(
 )
 retention = cohort_pivot.divide(cohort_pivot.iloc[:,0], axis=0)
 print(retention)
+
+#Visualizing
 plt.figure(figsize=(10,6))
 sns.heatmap(retention, annot=True, fmt=".0%", cmap="coolwarm")
 plt.title("Cohort Retention Heatmap")
