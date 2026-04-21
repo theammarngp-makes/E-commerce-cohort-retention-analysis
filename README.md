@@ -10,7 +10,7 @@ The goal is to understand how customers return over time after their first purch
 - Analyze cohort-wise behavior (monthly cohorts)  
 - Generate insights to improve customer retention  
   
-  ## 📁 Repository Structure
+## 📁 Repository Structure
 
 | Folder / File | Content |
 |---------------|---------|
