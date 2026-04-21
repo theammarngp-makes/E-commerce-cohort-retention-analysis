@@ -87,3 +87,34 @@ Aspiring Data Analyst | SQL | Tableau
 - E-Commerce RFM Customer Segmentation: : https://github.com/theammarngp-makes/ecommerce-rfm-customer-segmentation
   
 ⭐ If you found this project useful, give it a star!
+
+## 🚀 Skills & Tools Used
+
+<p align="center">
+
+<a href="https://www.python.org">
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+</a>
+
+<a href="https://www.mysql.com/">
+<img src="https://img.shields.io/badge/SQL-MySQL-black?style=for-the-badge&logo=mysql&logoColor=white"/>
+</a>
+
+<a href="https://pandas.pydata.org/">
+<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
+</a>
+
+<a href="https://matplotlib.org/">
+<img src="https://img.shields.io/badge/Matplotlib-Visualization-blue?style=for-the-badge"/>
+</a>
+
+<a href="https://www.tableau.com/">
+<img src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=Tableau&logoColor=white"/>
+</a>
+
+<a href="#">
+<img src="https://img.shields.io/badge/RFM-Analysis-green?style=for-the-badge"/>
+</a>
+
+</p>
+         
