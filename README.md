@@ -9,11 +9,6 @@ The goal is to understand how customers return over time after their first purch
 - Measure how many customers return after their first purchase  
 - Analyze cohort-wise behavior (monthly cohorts)  
 - Generate insights to improve customer retention  
-
-## 🛠 Tools Used
-- SQL (MySQL)
-- Tableau Public
-- Excel / CSV Dataset
   
   ## 📁 Repository Structure
 
