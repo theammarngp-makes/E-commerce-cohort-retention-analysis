@@ -1,115 +1,90 @@
-# 📊 E-Commerce Cohort Retention Analysis (Olist Dataset)
+# E-Commerce Cohort Retention Analysis
 
-## Project Overview
-This project focuses on analyzing customer retention using cohort analysis on an e-commerce dataset (Olist).  
-The goal is to understand how customers return over time after their first purchase.
+> Part of the Apex AnalyticX consulting-grade analytics portfolio. Project 3 of 4 in the Business Intelligence Suite (following Revenue Analysis and RFM Customer Segmentation).
+
+## Executive Summary
+Across 23 monthly cohorts (~95,560 customers, Sep 2016-Aug 2018), month-1 retention averages just 0.33% and never exceeds 0.65% in any cohort. The business has scaled almost entirely through new-customer acquisition, not repeat purchases. Full detail in [docs/01_Executive_Summary.md](docs/01_Executive_Summary.md).
+
+## Business Background
+[See docs/02_Business_Background.md]
+
+## Business Problem
+Why are customers not returning to purchase again after their first order?
 
 ## Objectives
-- Identify customer retention trends over time  
-- Measure how many customers return after their first purchase  
-- Analyze cohort-wise behavior (monthly cohorts)  
-- Generate insights to improve customer retention  
-  
-## 📁 Repository Structure
+[See docs/04_Business_Objectives.md]
 
-| Folder / File | Content |
-|---------------|---------|
-| 📁 dashboard | cohort retention.png |
-| 📁 data | Cohort Retention %.csv |
-| 📁 insights | insights.md |
-| 📁 sql | cohort_analysis.sql |
-| 📄 README.md | Project documentation |
+## Stakeholders
+[See docs/05_Stakeholders.md]
 
-## 📌 Project Highlights
-- Performed cohort analysis using SQL  
-- Calculated retention rate using window functions  
-- Analyzed customer behavior across multiple months  
-- Built retention heatmap using Tableau
-  
-## 📊 Key Concepts
-- **Cohort Month:** Month of first purchase  
-- **Month Number:** Months since first purchase  
-- **Retention Rate:** % of customers returning  
+## Business Questions
+[See docs/06_Business_Questions.md]
 
-## 📈 Dashboard Preview
-<img width="2398" height="1198" alt="Dashboard 1-2" src="https://github.com/user-attachments/assets/f6bd370f-516d-4c06-99f1-4d4a464fc85d" /> 
+## Dataset
+Olist Brazilian E-Commerce Public Dataset. [See docs/08_Dataset_Overview.md]
 
-## 📊 Live Dashboard
-🔗 [View Interactive Tableau Dashboard](https://public.tableau.com/views/E-commercecohortretention/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+## Methodology
+Cohort assignment -> retention matrix -> SQL/Python analysis -> Tableau dashboard. [See docs/10_Methodology.md]
 
-## Key Insights
-1. Customer retention drops sharply after the first month  
-2. Most customers are one-time buyers with very low repeat rate  
-3. A small percentage of customers return after long gaps  
-4. Retention pattern is consistent across different cohorts  
-(Retention drops below 1% after the first month, highlighting a major customer retention problem)
+## SQL Analytics
+See `sql/` — cohort assignment, retention matrix, and KPI queries (repeat purchase rate, median time-to-second-purchase). See `sql/query_index.md` for run order.
 
-## 💡 Business Impact
-This analysis helps businesses:
-- Understand customer loyalty  
-- Improve retention strategies  
-- Design better marketing campaigns  
-- Increase repeat purchases  
+## Python Analytics
+See `python/` — data cleaning, cohort construction, and EDA/visualization scripts. Generated the heatmap and retention curve in `images/` from the real cohort data.
 
-## 🧠 Skills Demonstrated
-- SQL (Joins, Window Functions, Cohort Analysis)
-- Data Cleaning & Transformation
-- Retention Analysis
-- Data Visualization (Tableau)
-- Business Insight Generation  
+## Dashboard
+See `dashboard/` — Tableau build spec and field dictionary. Static equivalents of the core views are in `images/`.
 
-## ⚠️ Note
-Retention values are already expressed in percentage format  
-(e.g., 0.3367 = 0.3367%)
+## Insights
+- Repeat purchasing is structurally rare (avg. month-1 retention 0.33%), not just "low"
+- Retention did not improve as acquisition volume grew ~8x from 2017 to 2018
+- Whatever repeat purchases occur are concentrated in months 1-2, then long-tail low
 
-## 📂 Dataset
-Dataset not included due to size limitations.
+Full detail in [docs/12_Business_Insights.md](docs/12_Business_Insights.md).
 
-Download from:
-https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+## Recommendations
+1. Launch a first-60-day post-purchase re-engagement trigger
+2. Investigate root cause (delivery, seller quality, marketplace UX) before scaling acquisition further
+3. Track month-1/month-3 retention as a core dashboard KPI going forward
 
-## 👤 Author
-**Mohammad Ammar**  
-Aspiring Data Analyst | SQL | Tableau  
+Full detail in [docs/13_Business_Recommendations.md](docs/13_Business_Recommendations.md).
 
-## 📬 Contact
-- LinkedIn: https://www.linkedin.com/in/mohammad-ammar-ngp/  
-- GitHub: https://github.com/theammarngp-makes
-- 
-## 🔗 Related Projects
+## Business Impact
+A conservative lift from 0.33% to 1.5-2% month-1 retention would multiply the repeat-buyer base 4-6x at a fraction of new-customer acquisition cost.
 
-- E-commerce Sales Analysis https://github.com/theammarngp-makes/olist-sales-analysis
-- E-Commerce RFM Customer Segmentation: : https://github.com/theammarngp-makes/ecommerce-rfm-customer-segmentation
-  
-⭐ If you found this project useful, give it a star!
+## Repository Structure
+```
+E-commerce-cohort-retention-analysis/
+├── assets/
+├── dashboard/
+├── docs/
+├── images/
+├── presentation/
+├── python/
+├── reports/
+├── sql/
+├── README.md
+├── LICENSE
+└── requirements.txt
+```
 
-## 🚀 Skills & Tools Used
+## Deliverables
+- Full business documentation (docs/)
+- SQL cohort queries
+- Python cohort construction + EDA notebooks
+- Tableau retention dashboard
+- Executive report & presentation
 
-<p align="center">
+## Future Improvements
+- Predictive churn model
+- Marketing campaign attribution overlay
+- Automated monthly cohort refresh pipeline
 
-<a href="https://www.python.org">
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-</a>
+## Related Projects
+- [Olist Revenue & BI Analysis](https://github.com/theammarngp-makes/olist-sales-analysis)
+- [RFM Customer Segmentation](https://github.com/theammarngp-makes/ecommerce-rfm-customer-segmentation)
+- Month-over-Month Growth Analysis (next in series)
 
-<a href="https://www.mysql.com/">
-<img src="https://img.shields.io/badge/SQL-MySQL-black?style=for-the-badge&logo=mysql&logoColor=white"/>
-</a>
-
-<a href="https://pandas.pydata.org/">
-<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
-</a>
-
-<a href="https://matplotlib.org/">
-<img src="https://img.shields.io/badge/Matplotlib-Visualization-blue?style=for-the-badge"/>
-</a>
-
-<a href="https://www.tableau.com/">
-<img src="https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=Tableau&logoColor=white"/>
-</a>
-
-<a href="#">
-<img src="https://img.shields.io/badge/RFM-Analysis-green?style=for-the-badge"/>
-</a>
-
-</p>
-         
+## Author
+**Mohammad Ammar** — Founder, Apex AnalyticX
+Data Analyst | Business Intelligence | Analytics Consulting
